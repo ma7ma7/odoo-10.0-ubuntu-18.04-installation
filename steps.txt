@@ -79,3 +79,4 @@
 # this sections is always up to date every time i get an error i will show you the sollution 
 
 1 - Eror One Could not execute command 'lessc'
+    Terminal :> $ apt-get install node-less
