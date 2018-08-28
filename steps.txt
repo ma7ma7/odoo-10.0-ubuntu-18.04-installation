@@ -1,0 +1,74 @@
+
+/*-----------------------------------*/
+ # update the server 
+ /*-----------------------------------*/
+
+1 - sudo apt-get update 
+
+2 - sudo apt-get dist-upgrade
+
+3 - sudo apt-get update 
+
+4 - sudo apt-get dist-upgrade
+
+/*-----------------------------------*/
+ # Install postgres DBB 
+/*-----------------------------------*/
+
+1 - sudo apt-install postgresql
+
+2 - sudo su -u postgres 
+
+3- createuser -s mahmoud {Name_of_local_user}
+
+/*-----------------------------------*/
+ # Install the odoo 10 depandancies  
+/*-----------------------------------*/
+
+1 -sudo apt-get install python-dateutil python-docutils python-feedparser python-jinja2 python-ldap python-libxslt1 python-lxml python-mako python-mock python-openid python-psycopg2 python-psutil python-pychart python-pydot python-pyparsing python-reportlab python-simplejson python-tz python-unittest2 python-vatnumber python-vobject python-webdav python-werkzeug python-xlwt python-yaml python-zsi poppler-utils python-pip  python-passlib python-decorator gcc python-dev mc bzr python-setuptools python-markupsafe python-reportlab-accel python-zsi python-yaml python-argparse python-openssl python-egenix-mxdatetime python-usb python-serial lptools make python-pydot python-psutil python-paramiko poppler-utils python-pdftools antiword python-requests python-xlsxwriter python-suds python-psycogreen python-ofxparse python-gevent python-pypdf2  python-babel 
+
+/*-----------------------------------*/
+ # Install Git tools
+/*-----------------------------------*/
+
+1 - sudo apt install git 
+
+/*-----------------------------------*/
+ # Install Gdata
+/*-----------------------------------*/
+
+1 - sudo wget https://pypi.python.org/packages/a8/70/bd554151443fe9e89d9a934a7891aaffc63b9cb5c7d608972919a002c03c/gdata-2.0.18.tar.gz
+
+2 - sudo tar zxvf gdata-2.0.18.tar.gz
+
+3 - sudo chown -R Ubuntu_User_Name: gdata-2.0.18
+
+4 - sudo -s
+
+5 - cd gdata-2.0.18/
+
+6 - python setup.py install
+
+7 - exit
+
+/*-----------------------------------*/
+ # Install Odoo server 10 community 
+/*-----------------------------------*/
+
+1 - mkdir Odoo/
+
+2 - cd Odoo 
+
+3 - git clone --depth=1 --branch=10.0 https://github.com/odoo/odoo.git --single-branch
+
+4 - mv odoo odoo-10 
+
+/*-----------------------------------*/
+ # Run and test the server  
+/*-----------------------------------*/
+
+1 - cd odoo-10
+
+2 - Odoo/odoo-10$ ./odoo-bin 
+
+3 - Your browser :> Search bare :> localhost:8069  
