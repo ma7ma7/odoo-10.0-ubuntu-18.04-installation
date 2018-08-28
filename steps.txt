@@ -74,6 +74,14 @@
 3 - Your browser :> Search bare :> localhost:8069  
 
 /*-----------------------------------*/
+ # Install the requirements 
+/*-----------------------------------*/
+
+don't forget o install the requirements 
+
+$ pip install -r requirements.txt
+
+/*-----------------------------------*/
  # Handle Errors
 /*-----------------------------------*/
 # this sections is always up to date every time i get an error i will show you the sollution 
