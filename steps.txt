@@ -88,3 +88,7 @@ $ pip install -r requirements.txt
 
 1 - Eror One Could not execute command 'lessc'
     Terminal :> $ apt-get install node-less
+    
+ 2 - no module pyPdf , if you are using an dist 16 or less try to install 
+    Terminal :> $ apt-get install python-pypdf
+ 
